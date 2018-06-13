@@ -400,7 +400,7 @@
                         if (state == WAITING_FOR_SOLUTION) {
                             el_bottommessage.innerHTML =
                                 solutions + " solutions found so far; " + moves + " moves.";
-                       //     drawBoard();
+                            drawBoard();
                             i = repeats;
                             break;
                         }
@@ -1112,7 +1112,7 @@ foundSolutions=[];
 
             setBoardSize(3, 12);
             disableall();
-            enablebasic();
+            enablewithoutsupport();
             // playRing(10,11,0);
             // playRing(0,5,1);
             filterParts();
