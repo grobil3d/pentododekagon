@@ -1,0 +1,2 @@
+# pentododekagon
+pentododekagon puzzle calculator
