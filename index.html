@@ -874,7 +874,6 @@ console.log(sortable);
             }
         }
 
-
         function enablewithoutsupport() {
             parts.pentos.filter(pento => pento.needsupport === false).forEach(element => {
                 if (document.getElementById("pento" + parts.pentos.indexOf(element)))
@@ -909,7 +908,7 @@ console.log(sortable);
         }
 
         function enablebasic() {
-            var basics = ["I", "Y", "L-m", "N", "U", "P", "W-m", "F-m", "T", "Z-r"];
+            var basics = ["I", "Y", "L", "N", "U", "P", "W", "F", "T", "Z-rm"];
             basics.forEach(name => {
                 parts.pentos.filter(pento => pento.name === name).forEach(element => {
                     if (document.getElementById("pento" + parts.pentos.indexOf(element)))
@@ -1184,14 +1183,14 @@ foundSolutions=[];
                     <input type="checkbox" class="checkbox" name="ring" id="ring5" value=5>5</label>
             </div>
             <div id="button-holder">
-                parts:
+                pentos:
                 <br />
                 <button type="checkbox" class="checkbox" name="disableall" id="disableall">disable all</button>
                 <button type="checkbox" class="checkbox" name="enableall" id="enableall">enable all</button>
                 <button type="checkbox" class="checkbox" name="enablewithoutsupport" id="enablewithoutsupport">without support</button>
                 <button type="checkbox" class="checkbox" name="enablewithsupport" id="enablewithsupport">with support</button>
             <button type="checkbox" class="checkbox" name= "enablebasic"  id="enablebasic">basic</button>
-            <button type="checkbox" class="checkbox" name="disablebasic" id="disablebasic">complex</button>
+         <!--   <button type="checkbox" class="checkbox" name="disablebasic" id="disablebasic">complex</button> -->
             </div>
             <div id="listofparts">
             </div>
