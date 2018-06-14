@@ -618,7 +618,7 @@ console.log(sortable);
                     else if (blockedCt == spareSpaces)
                         message = "click 'run' or 'step' to start solving (or click a black square).";
                     else if (blockedCt == 0)
-                        message = "leave empty or click 2 squares per ring";
+                        message = "click 'run' or click 2 squares per ring";
                     else
                         message = "click up to " + (spareSpaces - blockedCt) + " more squares.";
                     document.getElementById("message").innerHTML = message;
@@ -1143,7 +1143,7 @@ foundSolutions=[];
                 <button id="reset" style="display:none" title="remove parts but not rings and restart.">reset</button>
             </p>
             <div>
-                <button id="run">run</button>
+                <button id="run" style="color: green">run</button>
                 <button id="pause">pause</button>
                 <button id="step">step</button>
             </div>
